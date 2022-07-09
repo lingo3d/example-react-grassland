@@ -1,0 +1,36 @@
+{
+    "name": "lingo3d-app",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "npm run clean && tsc --noEmit false --declaration --outDir lib && vite build",
+        "preview": "vite preview",
+        "clean": "node node_modules/rimraf/bin lib"
+    },
+    "dependencies": {
+        "lingo3d-react": "latest",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.11",
+        "@types/react-dom": "^18.0.5",
+        "@vitejs/plugin-react": "^1.3.2",
+        "autoprefixer": "^10.4.7",
+        "postcss": "^8.4.14",
+        "tailwindcss": "^3.0.24",
+        "typescript": "^4.7.3",
+        "vite": "^2.9.9",
+        "rimraf": "^3.0.2"
+    },
+    "module": "lib/App.js",
+    "main": "lib/App.js",
+    "types": "lib/App.d.ts",
+    "prettier": {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": false
+    }
+}
