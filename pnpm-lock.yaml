@@ -14,7 +14,7 @@ specifiers:
   vite: ^2.9.14
 
 dependencies:
-  lingo3d-react: 1.11.18_react@18.2.0
+  lingo3d-react: 1.11.19_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -1012,8 +1012,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /lingo3d-react/1.11.18_react@18.2.0:
-    resolution: {integrity: sha512-eDV6aJXM+OsNdO47oLf8X7Ig5m3r+GvjyO56nvYzHMoUZpx4ZsQgYb2QGPB3eXV6dxGfDRm0E9C8N7J4DLsPMw==}
+  /lingo3d-react/1.11.19_react@18.2.0:
+    resolution: {integrity: sha512-CxlxB5yaGmpD7+3DjJ85DhK3BaV21N7svLN9FDc1zsY7XOWAeLMQuGpJXjwMDAAWJM2vtcRpGdv/FIEoxB/WcA==}
     peerDependencies:
       react: '18'
     dependencies:
@@ -1022,7 +1022,7 @@ packages:
       '@lincode/reactivity': 1.0.65
       '@lincode/utils': 1.2.51
       '@types/three': 0.141.0
-      lingo3d: 1.11.18
+      lingo3d: 1.11.19
       nanoid: 4.0.0
       popmotion: 11.0.3
       preact: 10.9.0
@@ -1030,8 +1030,8 @@ packages:
       stats.js: 0.17.0
     dev: false
 
-  /lingo3d/1.11.18:
-    resolution: {integrity: sha512-FrfpZ3r/Fi21U7mqRHbDx+oV8Mm8P57bJkeBlq9K8DepD/UB9HybtnptXwrkzjnoBgSOUtIMOeVGE71L0RmPLA==}
+  /lingo3d/1.11.19:
+    resolution: {integrity: sha512-KXBHO3/mXC0qfMzUn1v5TVKm2KWd9QZFP7iblBkOeUe4ieHyie7iTVCNZILRe74E0kOo6k7EFRaF3m8+6Nqz5Q==}
     dependencies:
       '@lincode/events': 1.0.24
       '@lincode/filetypes': 1.0.1
