@@ -61,7 +61,13 @@ const Game = () => {
 
       {/* fox model, and the camera that follows it */}
       {/* 狐狸模型，和跟随它的相机 */}
-      <ThirdPersonCamera active mouseControl="drag" fov={fov} enableDamping>
+      <ThirdPersonCamera
+        active
+        mouseControl="drag"
+        lockTargetRotation="dynamic-lock"
+        fov={fov}
+        enableDamping
+      >
         <Dummy
           ref={foxRef}
           src="Fox.fbx"
