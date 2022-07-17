@@ -1,5 +1,5 @@
 import "./App.css";
-import { ThirdPersonCamera, types } from "lingo3d-react";
+import { DirectionalLight, ThirdPersonCamera, types } from "lingo3d-react";
 import { keyboard } from "lingo3d-react";
 import { Dummy } from "lingo3d-react";
 import {
@@ -49,15 +49,13 @@ const Game = () => {
     // set both skybox and environment lighting to HDR image
     // 将天空盒和环境光照设置为HDR贴图
     <World defaultLight="env.hdr" skybox="env.hdr">
-      {/* map model, roughness amd metalness adjusted for better color contrast */}
-      {/* 地图模型, 调整粗糙度和金属度以便实现更好的色彩对比度 */}
-      <Model
-        src="Grassland.glb"
-        scale={300}
-        physics="map"
-        roughnessFactor={0.5}
-        metalnessFactor={1}
-      />
+      {/* light that casts shadows */}
+      {/* 投射阴影的灯光 */}
+      <DirectionalLight y={1000} z={1000} x={1000} />
+
+      {/* map model */}
+      {/* 地图模型 */}
+      <Model src="Grassland.glb" scale={300} physics="map" />
 
       {/* fox model, and the camera that follows it */}
       {/* 狐狸模型，和跟随它的相机 */}
@@ -75,7 +73,7 @@ const Game = () => {
           strideMode="free"
           strideMove
           physics="character"
-          metalnessFactor={-1}
+          metalnessFactor={-5}
         />
       </ThirdPersonCamera>
 
